@@ -8,4 +8,4 @@
 <hr />
 <h3>#@Html.DisplayFor(model => model.PhoneNumber)</h3>
 
-<p>@Html.ActionLink("Stylists", "Index", "Stylists") | @Html.ActionLink("Clients", "Index")</p>
+<p>@Html.ActionLink("Stylists", "Index", "Stylists") | @Html.ActionLink("Clients", "Index")| @Html.ActionLink("Edit Client", "Edit", new { id = Model.ClientId }) | @Html.ActionLink("Delete Client", "Delete", new { id = Model.ClientId })</p>
