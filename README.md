@@ -55,7 +55,7 @@
 6. Navigate through the site by clicking links.
 
 #### Setting Up Your Database
-![Splash Page](./wwwroot/img/Database.png)
+![Splash Page](./wwwroot/img/Database.PNG)
 1. In database set up 3 tables: stylists, clients, and hairsaloncontext
 2. implement a one-to-many relationship between stylists and clients using a StylistId Integer. In stylists table StylistId should be primary key, with NN and AI active. For clients ClientID will be Primary key with same settings. hairsaloncontext will have HairSalonContextId
 3. add a Name varchar(45) to both stylists and clients tables, then add a Specialty varchar(45) to stylists. Lastly, add a Phonenumber varchar(45) to clients table.
