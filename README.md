@@ -37,7 +37,7 @@
 #### From the web
 1. Go to this [GitHub Repo Page](https://github.com/AndrewMMickel/HairSalon.Solution.git).
 2. Click the "Code" and click the 'Download zip' option.
-3. Unzip the file and navigate to `HairSalon` directory
+3. Unzip the file and navigate to `HairSalon.Solution` directory
 4. Type in `dotnet restore` to download necessary packages
 5. Then type in `dotnet run` and if the local host does not open automatically type link into browser window.
 6. Navigate through the site by clicking links.
@@ -46,20 +46,19 @@
 
 #### From Terminal
 
-1. Open a terminal in your code editor and type 
-: `https://github.com/AndrewMMickel/HairSalon.Solution.git`
-2. Navigate to the directory in the terminal (`cd HairSalon`)
-3. Then type `code .` to open it up in VS Code
-4. Type in `dotnet restore` to download necessary packages
-5. Then type in `dotnet run` and if the local host does not open automatically type link into browser window.
-6. Navigate through the site by clicking links.
+1. In terminal type `git clone https://github.com/AndrewMMickel/HairSalon.Solution.git`
+2. Navigate to the directory in the terminal (`cd HairSalon.Solution`)
+3. Type in `dotnet restore` to download necessary packages
+4. Then type in `dotnet run` and if the local host does not open automatically type link into browser window.
+5. Navigate through the site by clicking links.
 
 #### Setting Up Your Database
 ![Splash Page](./wwwroot/img/Database.PNG)
-1. In database set up 3 tables: stylists, clients, and hairsaloncontext
-2. implement a one-to-many relationship between stylists and clients using a StylistId Integer. In stylists table StylistId should be primary key, with NN and AI active. For clients ClientID will be Primary key with same settings. hairsaloncontext will have HairSalonContextId
-3. add a Name varchar(45) to both stylists and clients tables, then add a Specialty varchar(45) to stylists. Lastly, add a Phonenumber varchar(45) to clients table.
-
+1. In MySQl Workbench go to Administration Window, then select Data Import/Restore
+2. In Import Options select Import from Self-Contained File
+3. navigate to the .sql file in the project
+4. Under Default Schema to be Imported To, select the New button. Enter the name as andrew_mickel
+5. Click *Start Import*
 ## Known Bugs
 
 No known bugs.
